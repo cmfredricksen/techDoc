@@ -1,0 +1,118 @@
+html {
+    display: grid;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+    grid-template-areas:
+      "title main"
+      "nav main"
+      "nav main"
+      "nav main";
+
+  }
+
+
+#Page-Title {
+    background-color: mediumblue;
+    grid-area: title;
+    margin: 0;
+    padding: 0 .25em;    
+}
+
+h1 {
+
+    color: plum;
+}
+
+#navbar {
+    color: mediumblue;
+    border: 1px solid blueviolet;
+}
+
+#nav-head {
+    
+    font-size: 1.25em;
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
+    padding: .25em;
+    
+}
+
+a {
+    width: 90%;
+    text-align: center;
+    display: grid;
+    padding: 1em 0;
+    background-color: lavender;
+    border-bottom: 1px solid blueviolet;
+}
+
+a:hover {
+    color: crimson;
+}
+
+a:visited {
+    color: green;
+}
+
+.nav-link {
+    width: 100%;
+}
+
+main {
+      grid-area: main;
+  }
+  
+#main-doc {
+    background-color: plum;
+    margin: 0;
+  }
+
+section {
+      margin: 0 .5em;
+      
+      background-color: lavenderblush;
+
+  }
+.main-section {
+    padding-bottom: 1em;
+}
+
+  header {
+      font-size: 1.25em;
+      margin-top: .5em;
+      background-color: lavender;
+      padding: .25em;
+      color: mediumblue;
+  }
+
+  p {
+      line-height: 1.25em;
+      background-color: lavenderblush;
+      margin: .75em;
+  }
+
+  code {
+      background-color: blueviolet;
+      color: lavender;
+      margin-left: 1.5em;
+      padding: .25em .75em;
+      border-radius: .25em;
+      
+      
+  
+      
+      
+  }
+
+
+  
