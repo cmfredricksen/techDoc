@@ -39,7 +39,7 @@
 
         <code>git init</code>
 
-        <p>Now your directory is being tracked by git, and this repository that you just created will record all of the changes you will make!</p>
+        <p>Now your directory is being tracked by git, and this repository that you just created will record all of the changes you make to your code.</p>
 
         <p>I am using Visual Studio Code, which has a built in terminal. If you have your folder open and open a new terminal in VSC it will already be in the current directory. There are also tools you can use for git in VSC that do not require using the terminal.</p>
 
@@ -63,24 +63,42 @@
         
            <section class="main-section" id="committing">
         <header>Saving your changes, which is called committing in Git.</header>
-        <p>Now your files are staged and ready to save. To do this you use the 'git commit' command. When you use 'git commit' you are also required to add a message about the changes. You do this by appending:</p> <code> -m "message about changes"</code><p>to your command. Do your best to be clear in your messages, it will make your life and maybe even others lives, so much easier in the future!In order to commit your changes type in the following line:</p>
+        <p>Now your files are staged and ready to save. To do this you use the 'git commit' command. When you use 'git commit' you are also required to add a message about the changes. You do this by appending:</p> <code> -m "message about changes"</code><p>to your command. Do your best to be clear in your messages, it will make your life and maybe even others lives, so much easier in the future! In order to commit your changes type in the following line:</p>
         
-        <code>git commit 'filename' -m "message about changes"</code>
+        <code>git commit filename -m "message about changes"</code>
         <p>Just like staging, you can also use the '.' to include all files that are staged to commit. Now your changes are being tracked, but what if you want to share them, maybe even collaborate with others? That's what GitHub is for.</p>
         </section>
         
            <section class="main-section" id="github">
         <header>Github basics, including how to create an account and how start a repository.</header>
-        <p>Text</p>
-        <p>More text.</p>
-        <code>git push origin master</code>
+        <p>GitHub is a server that allows you to store your changes in remote repositories. This is a wonderful tool, as you have access to your work from any computer that is hooked to the internet AND you can collaborate with others very easily while working on code.</p>
+        <p>GitHub is free to use, simply go to <a href="https://github.com" target="_blank">github.com</a> and sign up for a free account. Once you are signed up Follow these steps:</p>
+        <li>Navigate to your account page</li>
+        <li>Click on the Repositories tab.</li>
+        <li>Click on 'NEW' button to creat a repository.<li>Do Not initialize with a README file for this repository.</li>
+
+        <p>Now that you have created your remote repository, open your command line and type in the following commands:</p>
+        <code>git remote add origin url-of-repository</code>
+        <p>To find the URL of your repository, simply navigate to that repo's page on GitHub. Then you can copy the address by clicking on the 'clone' button. You can also copy the address from the adress bar on your web browser while on the repo's page.</p>
+        <p>Now your local repository is connected to your remote repository. Next we will push our changes to GitHub.</p>
+        
+        <p></p>
         </section>
         
            <section class="main-section" id="pushing">
         <header>How to push your changes to an online repository, namely Github.</header>
-        <p>Text</p>
-        <p>More text.</p>
+        <p>Next we are going to push our changes to GitHub, saving them in our remote Repository that we just created. In order to do that type in the following command:</p>
+        
+        
+        <code>git push origin master</code>
+
+        <p>The above is for the first time push on any new repository. Once you have pushed commits to your remote repo for the first time the rest of your pushes are done using:</p>
         <code>git push</code>
+        <p>Now your files, and all of the changes made are saved to Github where you can work on them, share them and allow collaboration, just to name a few things. Once you have this set up, it is very quick and simple to keep everything up to date and in synch. To Summarize:</p>
+        <code>git add filename</code><br>
+        <code>git commit filename -m "message about changes"</code><br>
+        <code>git push</code>
+        <p>That's all for basic use of Git and GitHub, there is a lot more you can do with these amazing tools. Don't be intimidated, you will get the hang of it. The following sections are just extra tidbits I am still learning, you might find them useful.</p>
         </section>
 
         <section class="main-section" id="branches">

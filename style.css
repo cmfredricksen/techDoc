@@ -48,12 +48,7 @@ h1 {
 }
 
 a {
-    width: 90%;
-    text-align: center;
-    display: grid;
-    padding: 1em 0;
-    background-color: lavender;
-    border-bottom: 1px solid blueviolet;
+    
 }
 
 a:hover {
@@ -66,6 +61,11 @@ a:visited {
 
 .nav-link {
     width: 100%;
+    text-align: center;
+    display: grid;
+    padding: 1em 0;
+    background-color: lavender;
+    border-bottom: 1px solid blueviolet;
 }
 
 main {
@@ -104,14 +104,16 @@ section {
   code {
       background-color: blueviolet;
       color: lavender;
-      margin-left: 1.5em;
+      margin: 1em 1.5em;
       padding: .25em .75em;
       border-radius: .25em;
-      
-      
-  
-      
-      
+        
+  }
+
+  li {
+      margin: .25em 1em;
+      font-size: .9em;
+      color: midnightblue;
   }
 
 
