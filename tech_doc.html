@@ -35,20 +35,38 @@
         <p>Git is version control software. It keeps track of every change you make to your files. This allows you the freedom to go back to an earlier rendition of your code if things go awry. Another handy feature is the ability to work on branches, only merging to your main project once everything is working properly.</p>
         <p>In order for Git to track your changes you need to start a repository for your file(s). You will do this by using the 'git init' command in your terminal. Git init is short for git initialize, and this command begins a repository for your file.
         </p>
+        <p>To start you need to open your command prompt, powershell, or terminal. Once you have opened your prompt, navigate to the directory (file) you want to track using git. Next you want to type in the following command and hit enter:</p>
+
+        <code>git init</code>
+
+        <p>Now your directory is being tracked by git, and this repository that you just created will record all of the changes you will make!</p>
+
+        <p>I am using Visual Studio Code, which has a built in terminal. If you have your folder open and open a new terminal in VSC it will already be in the current directory. There are also tools you can use for git in VSC that do not require using the terminal.</p>
+
+        <p>Whether you use the terminal, or the tools in your editor to work with Git, the steps are the same and proceed in the same order. I suggest learning how to use the terminal first, but you can do it either way.</p>
+
+        <p>Now you have initialized a git repository to keep track of your files, what's next?</p>
         </section>
         
            <section class="main-section" id="staging">
-        <header>Staging your changes so you can save them.</header>
-        <p>Text</p>
-        <p>More text.</p>
-        <code>git add 'filename'</code>
+        <header>Staging your changes so you can save, or commit them.</header>
+        <p>You have done some work on your project and now you want to save it, along with each change you've made along the way. In Git, a save is called a commit, and before you make a 'commit' you have to 'stage' your changes.</p>
+        <p>Here is how to do it, return to your command prompt and type in the following:</p>
+        <code>git add filename</code>
+        <p>'filename' means the name of your file, for example index.html. If you want to see which files in your directory have changes to commit, type in:</p>
+        <code>git status</code>
+        <P>If you have changes across several files within your directory you can simply type in:</P>
+            <code>git add .</code>
+        <p>This will add all of the files in the current directory that have changes to the staging area. Now that the files are staged, they are ready to commit.</p>
+        
         </section>
         
            <section class="main-section" id="committing">
         <header>Saving your changes, which is called committing in Git.</header>
-        <p>Text</p>
-        <p>More text.</p>
+        <p>Now your files are staged and ready to save. To do this you use the 'git commit' command. When you use 'git commit' you are also required to add a message about the changes. You do this by appending:</p> <code> -m "message about changes"</code><p>to your command. Do your best to be clear in your messages, it will make your life and maybe even others lives, so much easier in the future!In order to commit your changes type in the following line:</p>
+        
         <code>git commit 'filename' -m "message about changes"</code>
+        <p>Just like staging, you can also use the '.' to include all files that are staged to commit. Now your changes are being tracked, but what if you want to share them, maybe even collaborate with others? That's what GitHub is for.</p>
         </section>
         
            <section class="main-section" id="github">
