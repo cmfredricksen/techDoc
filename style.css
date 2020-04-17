@@ -47,8 +47,10 @@ h1 {
     
 }
 
-a {
-    
+.symbol {
+    font-size: 1.5em;
+    color: crimson;
+    background-color: lavender;
 }
 
 a:hover {
@@ -114,6 +116,30 @@ section {
       margin: .25em 1em;
       font-size: .9em;
       color: midnightblue;
+  }
+
+  @media only screen and (max-width: 640px) {
+      .wrapper {
+          
+          width: 100%;
+          grid-template-areas: 
+          "title"
+          "nav"
+          "main";
+      }
+
+      #Page-Title {
+          grid-column: 1 / -1;
+          grid-row: 1 / 2;
+      }
+
+      #navbar {
+          grid-column: 1 / -1;
+      }
+
+      main {
+          grid-column: 1 / -1;
+      }
   }
 
 

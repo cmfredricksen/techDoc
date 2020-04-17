@@ -47,6 +47,7 @@
         <p>Whether you use the terminal, or the tools in your editor to work with Git, the steps are the same and proceed in the same order. I suggest learning how to use the terminal first, but you can do it either way.</p>
 
         <p>Now you have initialized a git repository to keep track of your files, what's next?</p>
+        <a href="#top"><p  class="symbol">&uarr;</p></a>
         </section>
         
            <section class="main-section" id="staging">
@@ -68,6 +69,7 @@
                 <code>git add .</code>
             
         <p>This will add all of the files in the current directory that have changes to the staging area. Now that the files are staged, they are ready to commit.</p>
+        <a href="#top"><p  class="symbol">&uarr;</p></a>
         
         </section>
         
@@ -82,6 +84,7 @@
             <code>git commit filename -m "message about changes"</code>
         
         <p>Just like staging, you can also use the '.' to include all files that are staged to commit. Now your changes are being tracked, but what if you want to share them, maybe even collaborate with others? That's what GitHub is for.</p>
+        <a href="#top"><p  class="symbol">&uarr;</p></a>
         </section>
         
            <section class="main-section" id="github">
@@ -98,8 +101,9 @@
         
         <p>To find the URL of your repository, simply navigate to that repo's page on GitHub. Then you can copy the address by clicking on the 'clone' button. You can also copy the address from the adress bar on your web browser while on the repo's page.</p>
         <p>Now your local repository is connected to your remote repository. Next we will push our changes to GitHub.</p>
+        <a href="#top"><p  class="symbol">&uarr;</p></a>
         
-        <p></p>
+        
         </section>
         
            <section class="main-section" id="pushing">
@@ -116,6 +120,7 @@
         <code>git commit filename -m "message about changes"</code><br>
         <code>git push</code>
         <p>That's all for basic use of Git and GitHub, there is a lot more you can do with these amazing tools. Don't be intimidated, you will get the hang of it. The following sections are just extra tidbits I am still learning, you might find them useful.</p>
+        <a href="#top"><p  class="symbol">&uarr;</p></a>
         </section>
 
         <section class="main-section" id="branches">
@@ -136,13 +141,29 @@
             <code>git push origin layout</code>
             <p>Once you are finished pushing your changes to GitHub, then you can switch back to Master by typing in:</p>
             <code>git checkout master</code>
+            <p>Once you have switched to the master branch, you can then merge your other branch by typing in:</p>
+            <code>git merge name-of-other-branch</code>
+            <p>Now you have merged your changes from your other branch in with the master.</p>
+            <p>This is just a little bit of basic information, things I have had to look up quite a bit until I got it down pat. There is a lot more to explore with Git and GitHub.</p>
+            <a href="#top"><p  class="symbol">&uarr;</p></a>
             </section>
 
             <section class="main-section" id="more">
-                <header>More information including definitions, tips and tricks and recommendations for learning.</header>
-                <p>Text</p>
-                <p>More text.</p>
-                <code>code</code>
+                <header>More information including definitions, tips and tricks and resources for learning.</header>
+                <p>There are several sources of good information on Git and GitHub, but the best way to learn is by doing. When I started trying to learn about version control it was hard for me to wrap my head around it. So the first source I am going to share is a series of videos that helped me understand it a little better, while keeping it fun.
+                    <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV" target="_blank">Git and GitHub for Poets </a>by The Coding Train.</p>
+                <p>GitHub is also a source of good information, including this <a href="https://github.github.com/training-kit/" target="_blank">Git & GitHub CheatSheet.</a></p>
+                <ul>Commands
+                    <li><code>dir /ah</code>to see hidden files, including your git repo.</li>
+                    <li><code>git log</code>shows log of version history of the current branch.</li>
+                </ul>
+                <p>Definitions taken from GitHub:
+                    <li>git: an open source, distributed version-control system.</li>
+                    <li>GitHub: a platform for hosting and collaborating on Git repositories.</li>
+                </p>
+                <p>In order to learn what I have I just did it several times. I made web pages, and then initiated git, then I pushed them remote. I went through the steps several times until it became pretty easy. After that I moved to branches. I do not think they are usually necessary for what I am doing at this time, but I wanted to get comfortable with the basics. That way it will be easier to learn more as my skills improve.</p>
+                <p>I hope this is useful for you. Don't give up, you'll get it!</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
                 </section>
     </div>
         
