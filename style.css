@@ -16,7 +16,8 @@ body {
       "title main"
       "nav main"
       "nav main"
-      "nav main";
+      "nav main"
+      "foot main";
 
   }
 
@@ -118,6 +119,28 @@ section {
       color: midnightblue;
   }
 
+  .foot {
+      display: grid;
+      
+      
+      
+  }
+
+  .navbar-foot {
+      
+      display: flex;
+      padding-bottom: 2em;
+  } 
+
+  .nav-link-foot {
+    width: 100%;
+    text-align: center;
+    
+    padding: 1em 0;
+    background-color: lavender;
+    border: 1px solid blueviolet;
+}
+
   @media only screen and (max-width: 640px) {
       .wrapper {
           
@@ -125,7 +148,8 @@ section {
           grid-template-areas: 
           "title"
           "nav"
-          "main";
+          "main"
+          "foot";
       }
 
       #Page-Title {
