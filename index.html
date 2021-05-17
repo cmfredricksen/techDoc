@@ -9,147 +9,149 @@
 
 
 <body>
+    <div id="Page-Title">
+        <h1 class='title'>Git & Github</h1>
+        <h3 class='subtitle'>Getting Started with Git and Github</h3>
+        
     <div class="wrapper">
-      <div id="Page-Title">
-        <h1>Git & Github</h1>
-        
-        </div>
-      <nav id="navbar">
-        <header id="nav-head">Getting Started with Git and Github</header>
+         <nav>
          
-        <a href="#initialize" class="nav-link">Initializing Git</a>
-        <a href="#staging" class="nav-link">Staging Changes</a>
-        <a href="#committing" class="nav-link">Committing Changes</a>
-        <a href="#github" class="nav-link">Github Basics</a>
-        <a href="#pushing" class="nav-link">Pushing to Github</a>
-        <a href="#branches" class="nav-link">Git Branches</a>
-        <a href="#more" class="nav-link">More Information</a>
+                <a href="#initialize" class="nav-link">Initializing Git</a>
+                <a href="#staging" class="nav-link">Staging Changes</a>
+                <a href="#committing" class="nav-link">Committing Changes</a>
+                <a href="#github" class="nav-link">Github Basics</a>
+                <a href="#pushing" class="nav-link">Pushing to Github</a>
+                <a href="#branches" class="nav-link">Git Branches</a>
+                <a href="#more" class="nav-link">More Information</a>
         
-    </nav>
+        </nav>
     
-    <main id="main-doc">
+        <main>
      
       
-        <section class="main-section" id="initialize">
-        <header>Initializing Git to start tracking your files.</header>
-        <p>Git is version control software. It keeps track of every change you make to your files. This allows you the freedom to go back to an earlier rendition of your code if things go awry. Another handy feature is the ability to work on branches, only merging to your main project once everything is working properly.</p>
-        <p>In order for Git to track your changes you need to start a repository for your file(s). You will do this by using the 'git init' command in your terminal. Git init is short for git initialize, and this command begins a repository for your file.
-        </p>
-        <p>To start you need to open your command prompt, powershell, or terminal. Once you have opened your prompt, navigate to the directory (file) you want to track using git. Next you want to type in the following command and hit enter:</p>
+            <section class="main-section" id="initialize">
+                <h3>Initializing Git to start tracking your files.</h3>
+
+                <p>Git is version control software. It keeps track of every change you make to your files. This allows you the freedom to go back to an earlier rendition of your code if things go awry. Another handy feature is the ability to work on branches, only merging to your main project once everything is working properly.</p>
+                <p>In order for Git to track your changes you need to start a repository for your file(s). You will do this by using the 'git init' command in your terminal. Git init is short for git initialize, and this command begins a repository for your file.
+                </p>
+                <p>To start you need to open your command prompt, powershell, or terminal. Once you have opened your prompt, navigate to the directory (file) you want to track using git. Next you want to type in the following command and hit enter:</p>
                 
-             <code>git init</code>
+                <code>git init</code>
         
 
-        <p>Now your directory is being tracked by git, and this repository that you just created will record all of the changes you make to your code.</p>
+                <p>Now your directory is being tracked by git, and this repository that you just created will record all of the changes you make to your code.</p>
 
-        <p>I am using Visual Studio Code, which has a built in terminal. If you have your folder open and open a new terminal in VSC it will already be in the current directory. There are also tools you can use for git in VSC that do not require using the terminal.</p>
+                <p>I am using Visual Studio Code, which has a built in terminal. If you have your folder open and open a new terminal in VSC it will already be in the current directory. There are also tools you can use for git in VSC that do not require using the terminal.</p>
 
-        <p>Whether you use the terminal, or the tools in your editor to work with Git, the steps are the same and proceed in the same order. I suggest learning how to use the terminal first, but you can do it either way.</p>
+                <p>Whether you use the terminal, or the tools in your editor to work with Git, the steps are the same and proceed in the same order. I suggest learning how to use the terminal first, but you can do it either way.</p>
 
-        <p>Now you have initialized a git repository to keep track of your files, what's next?</p>
-        <a href="#top"><p  class="symbol">&uarr;</p></a>
-        </section>
+                <p>Now you have initialized a git repository to keep track of your files, what's next?</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
+            </section>
         
-           <section class="main-section" id="staging">
-        <header>Staging your changes so you can save, or commit them.</header>
-        <p>You have done some work on your project and now you want to save it, along with each change you've made along the way. In Git, a save is called a commit, and before you make a 'commit' you have to 'stage' your changes.</p>
-        <p>Here is how to do it, return to your command prompt and type in the following:</p>
+            <section class="main-section" id="staging">
+
+                <h3>Staging your changes so you can save, or commit them.</h3>
+                <p>You have done some work on your project and now you want to save it, along with each change you've made along the way. In Git, a save is called a commit, and before you make a 'commit' you have to 'stage' your changes.</p>
+                <p>Here is how to do it, return to your command prompt and type in the following:</p>
         
 
                 <code>git add filename</code>
             
-        <p>'filename' means the name of your file, for example index.html. If you want to see which files in your directory have changes to commit, type in:</p>
+                <p>'filename' means the name of your file, for example index.html. If you want to see which files in your directory have changes to commit, type in:</p>
             
             
                 <code>git status</code>
             
-        <P>If you have changes across several files within your directory you can simply type in:</P>
+                <P>If you have changes across several files within your directory you can simply type in:</P>
             
                 
                 <code>git add .</code>
             
-        <p>This will add all of the files in the current directory that have changes to the staging area. Now that the files are staged, they are ready to commit.</p>
-        <a href="#top"><p  class="symbol">&uarr;</p></a>
+                <p>This will add all of the files in the current directory that have changes to the staging area. Now that the files are staged, they are ready to commit.</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
         
-        </section>
+            </section>
         
            <section class="main-section" id="committing">
-        <header>Saving your changes, which is called committing in Git.</header>
-        <p>Now your files are staged and ready to save. To do this you use the 'git commit' command. When you use 'git commit' you are also required to add a message about the changes. You do this by appending:</p> 
-            
-            <code> -m "message about changes"</code>
         
-        <p>to your command. Do your best to be clear in your messages, it will make your life and maybe even others lives, so much easier in the future! In order to commit your changes type in the following line:</p>
+                <h3>Saving your changes, which is called committing in Git.</h3>
+                <p>Now your files are staged and ready to save. To do this you use the 'git commit' command. When you use 'git commit' you are also required to add a message about the changes. You do this by appending:</p> 
             
-            <code>git commit filename -m "message about changes"</code>
+                <code> -m "message about changes"</code>
         
-        <p>Just like staging, you can also use the '.' to include all files that are staged to commit. Now your changes are being tracked, but what if you want to share them, maybe even collaborate with others? That's what GitHub is for.</p>
-        <a href="#top"><p  class="symbol">&uarr;</p></a>
-        </section>
+                <p>to your command. Do your best to be clear in your messages, it will make your life and maybe even others lives, so much easier in the future! In order to commit your changes type in the following line:</p>
+            
+                <code>git commit filename -m "message about changes"</code>
+        
+                <p>Just like staging, you can also use the '.' to include all files that are staged to commit. Now your changes are being tracked, but what if you want to share them, maybe even collaborate with others? That's what GitHub is for.</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
+            </section>
         
            <section class="main-section" id="github">
-        <header>Github basics, including how to create an account and how start a repository.</header>
-        <p>GitHub is a server that allows you to store your changes in remote repositories. This is a wonderful tool, as you have access to your work from any computer that is hooked to the internet AND you can collaborate with others very easily while working on code.</p>
-        <p>GitHub is free to use, simply go to <a href="https://github.com" target="_blank">github.com</a> and sign up for a free account. Once you are signed up Follow these steps:</p>
-        <li>Navigate to your account page</li>
-        <li>Click on the Repositories tab.</li>
-        <li>Click on 'NEW' button to creat a repository.<li>Do Not initialize with a README file for this repository.</li>
+                <h3>Github basics, including how to create an account and how start a repository.</h3>
+                <p>GitHub is a server that allows you to store your changes in remote repositories. This is a wonderful tool, as you have access to your work from any computer that is hooked to the internet AND you can collaborate with others very easily while working on code.</p>
+                <p>GitHub is free to use, simply go to <a href="https://github.com" target="_blank">github.com</a> and sign up for a free account. Once you are signed up Follow these steps:</p>
+                <li>Navigate to your account page</li>
+                <li>Click on the Repositories tab.</li>
+                <li>Click on 'NEW' button to creat a repository.<li>Do Not initialize with a README file for this repository.</li>
 
-        <p>Now that you have created your remote repository, open your command line and type in the following commands:</p>
+                <p>Now that you have created your remote repository, open your command line and type in the following commands:</p>
 
-            <code>git remote add origin url-of-repository</code>
+                <code>git remote add origin url-of-repository</code>
         
-        <p>To find the URL of your repository, simply navigate to that repo's page on GitHub. Then you can copy the address by clicking on the 'clone' button. You can also copy the address from the adress bar on your web browser while on the repo's page.</p>
-        <p>Now your local repository is connected to your remote repository. Next we will push our changes to GitHub.</p>
-        <a href="#top"><p  class="symbol">&uarr;</p></a>
+                <p>To find the URL of your repository, simply navigate to that repo's page on GitHub. Then you can copy the address by clicking on the 'clone' button. You can also copy the address from the adress bar on your web browser while on the repo's page.</p>
+                <p>Now your local repository is connected to your remote repository. Next we will push our changes to GitHub.</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
         
         
-        </section>
+            </section>
         
            <section class="main-section" id="pushing">
-        <header>How to push your changes to an online repository, namely Github.</header>
-        <p>Next we are going to push our changes to GitHub, saving them in our remote Repository that we just created. In order to do that type in the following command:</p>
+                <h3>How to push your changes to an online repository, namely Github.</h3>
+                <p>Next we are going to push our changes to GitHub, saving them in our remote Repository that we just created. In order to do that type in the following command:</p>
         
         
-        <code>git push origin master</code>
+                <code>git push origin master</code>
 
-        <p>The above is for the first time push on any new repository. Once you have pushed commits to your remote repo for the first time the rest of your pushes are done using:</p>
-        <code>git push</code>
-        <p>Now your files, and all of the changes made are saved to Github where you can work on them, share them and allow collaboration, just to name a few things. Once you have this set up, it is very quick and simple to keep everything up to date and in synch. To Summarize:</p>
-        <code>git add filename</code><br>
-        <code>git commit filename -m "message about changes"</code><br>
-        <code>git push</code>
-        <p>That's all for basic use of Git and GitHub, there is a lot more you can do with these amazing tools. Don't be intimidated, you will get the hang of it. The following sections are just extra tidbits I am still learning, you might find them useful.</p>
-        <a href="#top"><p  class="symbol">&uarr;</p></a>
-        </section>
+                <p>The above is for the first time push on any new repository. Once you have pushed commits to your remote repo for the first time the rest of your pushes are done using:</p>
+                <code>git push</code>
+                <p>Now your files, and all of the changes made are saved to Github where you can work on them, share them and allow collaboration, just to name a few things. Once you have this set up, it is very quick and simple to keep everything up to date and in synch. To Summarize:</p>
+                <code>git add filename</code><br>
+                <code>git commit filename -m "message about changes"</code><br>
+                <code>git push</code>
+                <p>That's all for basic use of Git and GitHub, there is a lot more you can do with these amazing tools. Don't be intimidated, you will get the hang of it. The following sections are just extra tidbits I am still learning, you might find them useful.</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
+            </section>
 
-        <section class="main-section" id="branches">
-            <header>How to use branches while working on your project. This includes creating branches, switching branches, and merging branches.</header>
-            <p>Branches allow you to work on, or add special features, without interfering with your current project. When you start a repository in Git, it is automatically assigned to the role of 'Master' branch. </p>
-            <p>I often make another branch to work on the layout while I am building my site. I call it layout. Once I am pleased with my work I merge it with the 'Master' branch.</p>
-            <p>To start, open your command line. Then type in:</p>
-            <code>git branch</code>
-            <p>This will give you a list of current branches in your project. The branch you are currently working on will be highlighted. To make a new branch:</p>
-            <code>git branch name-of-new-branch</code>
-            <p>Then to switch over to your new branch type in:</p>
-            <code>git checkout name-of-branch</code>
-            <p>Now you are working on your new branch. Once you have made some changes you go through the same process of:</p>
-            <code>git add filename</code><br>
-            <code>git commit filename -m "message about changes"</code><br>
-            <code>git push</code>
-            <p>If it is your first time pushing this branch to your remote repository then use:</p>
-            <code>git push origin layout</code>
-            <p>Once you are finished pushing your changes to GitHub, then you can switch back to Master by typing in:</p>
-            <code>git checkout master</code>
-            <p>Once you have switched to the master branch, you can then merge your other branch by typing in:</p>
-            <code>git merge name-of-other-branch</code>
-            <p>Now you have merged your changes from your other branch in with the master.</p>
-            <p>This is just a little bit of basic information, things I have had to look up quite a bit until I got it down pat. There is a lot more to explore with Git and GitHub.</p>
-            <a href="#top"><p  class="symbol">&uarr;</p></a>
+            <section class="main-section" id="branches">
+                <header>How to use branches while working on your project. This includes creating branches, switching branches, and merging branches.</header>
+                <p>Branches allow you to work on, or add special features, without interfering with your current project. When you start a repository in Git, it is automatically assigned to the role of 'Master' branch. </p>
+                <p>I often make another branch to work on the layout while I am building my site. I call it layout. Once I am pleased with my work I merge it with the 'Master' branch.</p>
+                <p>To start, open your command line. Then type in:</>
+                <code>git branch</code>
+                <p>This will give you a list of current branches in your project. The branch you are currently working on will be highlighted. To make a new branch:</p>
+                <code>git branch name-of-new-branch</code>
+                <p>Then to switch over to your new branch type in:</p>
+                <code>git checkout name-of-branch</code>
+                <p>Now you are working on your new branch. Once you have made some changes you go through the same process of:</p>
+                <code>git add filename</code><br>
+                <code>git commit filename -m "message about changes"</code><br>
+                <code>git push</code>
+                <p>If it is your first time pushing this branch to your remote repository then use:</p>
+                <code>git push origin layout</code>
+                <p>Once you are finished pushing your changes to GitHub, then you can switch back to Master by typing in:</p>
+                <code>git checkout master</code>
+                <p>Once you have switched to the master branch, you can then merge your other branch by typing in:</p>
+                <code>git merge name-of-other-branch</code>
+                <p>Now you have merged your changes from your other branch in with the master.</p>
+                <p>This is just a little bit of basic information, things I have had to look up quite a bit until I got it down pat. There is a lot more to explore with Git and GitHub.</p>
+                <a href="#top"><p  class="symbol">&uarr;</p></a>
             </section>
 
             <section class="main-section" id="more">
-                <header>More information including definitions, tips and tricks and resources for learning.</header>
+                <h3>More information including definitions, tips and tricks and resources for learning.</h3>
                 <p>There are several sources of good information on Git and GitHub, but the best way to learn is by doing. When I started trying to learn about version control it was hard for me to wrap my head around it. So the first source I am going to share is a series of videos that helped me understand it a little better, while keeping it fun.
                     <a href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV" target="_blank">Git and GitHub for Poets </a>by The Coding Train.</p>
                 <p>GitHub is also a source of good information, including this <a href="https://github.github.com/training-kit/" target="_blank">Git & GitHub CheatSheet.</a></p>
@@ -164,13 +166,11 @@
                 <p>In order to learn what I have I just did it several times. I made web pages, and then initiated git, then I pushed them remote. I went through the steps several times until it became pretty easy. After that I moved to branches. I do not think they are usually necessary for what I am doing at this time, but I wanted to get comfortable with the basics. That way it will be easier to learn more as my skills improve.</p>
                 <p>I hope this is useful for you. Don't give up, you'll get it!</p>
                 <a href="#top"><p  class="symbol">&uarr;</p></a>
-                </section>
-                <section class="main-section"></section><div class="foot">
-                    
-                    <p>This website is based on the notes I took when I started learning Git and GitHub.My name is Chris Fredricksen and you can find me in these places:</p><br>
-                    <div class="navbar-foot">
-                </div></section>
+            </section>
     </div>
+            <footer>
+                <p class="footer-text">made with &hearts; by cmfredricksen</p>
+            </footer>        
         
         
         
