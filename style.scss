@@ -24,6 +24,7 @@ h5,
 h6 {
   font-family: $font-heading;
   margin: 0.5rem 0.5rem 0;
+  text-align: center;
 }
 
 p {
@@ -84,4 +85,5 @@ code {
   //   border-radius: 100%;
   margin: 1.5rem 0.5rem;
   padding: 0.5rem;
+  font-weight: 1000;
 }
