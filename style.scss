@@ -86,12 +86,14 @@ code {
 }
 
 .symbol {
-  background-color: lightgray;
-  display: inline;
+  // background-color: lightgray;
+  display: block;
   //   border-radius: 100%;
-  margin: 1.5rem 0.5rem;
-  padding: 0.5rem;
-  font-weight: 1000;
+  // margin: 1.5rem 0.5rem;
+  // padding: 0.5rem;
+  text-decoration: underline;
+  font-size: small;
+  font-weight: 100;
   text-align: right;
 }
 
@@ -99,4 +101,15 @@ code {
   margin: 2rem 0;
   border-top: 7px solid lightgrey;
   padding-top: 1rem;
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    background-color: lightgray;
+  }
+  body {
+    border-left: 2rem solid grey;
+    border-right: 2rem solid grey;
+    background-color: white;
+  }
 }
