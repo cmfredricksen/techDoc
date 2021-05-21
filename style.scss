@@ -51,6 +51,12 @@ nav {
 a {
   text-decoration: none;
   font-family: $font-links;
+  font-weight: 1000;
+}
+
+a:hover {
+  font-weight: bold;
+  color: green;
 }
 
 p {
@@ -86,4 +92,11 @@ code {
   margin: 1.5rem 0.5rem;
   padding: 0.5rem;
   font-weight: 1000;
+  text-align: right;
+}
+
+.main-section {
+  margin: 2rem 0;
+  border-top: 7px solid lightgrey;
+  padding-top: 1rem;
 }

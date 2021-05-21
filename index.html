@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1">
     <title>Git Basics</title>
 </head>
 
@@ -25,6 +23,7 @@
                 <a href="#github" class="nav-link">Github Basics</a>
                 <a href="#pushing" class="nav-link">Pushing to Github</a>
                 <a href="#branches" class="nav-link">Git Branches</a>
+                <a href="#git-pages" class="nav-link">Publish with GitHub Pages</a>
                 <a href="#more" class="nav-link">More Information</a>
         
         </nav>
@@ -108,7 +107,7 @@
                 <li>Click on 'NEW' button to creat a repository.</li>
                 <li>Do Not initialize with a README file for this repository.</li>
 
-                <p>Now that you have created your remote repository, open your command line and type in the following commands:</p>
+                <p>Now that you have created your remote repository, open your command line, navigate to your projects directory, and type in the following commands:</p>
 
                 <p class='code-box'>git remote add origin url-of-repository</p class='code-box'>
         
@@ -159,10 +158,27 @@
                 <p>This is just a little bit of basic information, things I have had to look up quite a bit until I got it down pat. There is a lot more to explore with Git and GitHub.</p>
                 <a href="#top"><p  class="symbol">&uarr;</p></a>
             </section>
-
+            
+            <section class="main-section" id="git-pages">
+                <h3>How to Deploy Your Site Using Git Pages</h3>
+                <p>This, to me, was one of the trickiest things to figure out as a beginner to coding and web development. So I learned to follow the steps which I found on <a href="https://www.theodinproject.com/">The Odin Project</a> and after I had those down I was able to understand it better.</p>
+                <p>Once you have pushed your repo to GitHub, then you can publish the page to the web using GitHub Pages. You must have an index.html file to do this.</p>
+                <p>Follow these steps:</p>
+                <li>On GitHub, navigate to the repo you want to publish</li>
+                <li>Click on Settings</li>
+                <li>On the settings page, click on Pages in the left menu</li>
+                <li>Under Source change it to Master</li>
+                <li>Click Save</li>
+                <p>And that is it, your website is now online and you can view it by clicking the link where it says 'Your site is ready to be published link_to_site'. You can share this link with anyone you want so they can visit your site too.</p>
+                <p>As a note: It may take a few minutes for your site to go live!</p>
+                <p>Another thing you can do is go back to your repo's page and go to the About settings, add the link to your website there and it will show up on your repo. Very nifty!</p>
+                <p>This is just the beginning of what you can do with GitHub pages, but I am just giving you the basic info needed to publish your site, and it's free!</p>
+            </section>
+            <a href="#top"><p  class="symbol">&uarr;</p></a>
+            
             <section class="main-section" id="more">
                 <h3>More information including definitions, tips and tricks and resources for learning.</h3>
-                <p>There are several sources of good information on Git and GitHub, but the best way to learn is by doing. When I started trying to learn about version control it was hard for me to wrap my head around it. So the first source I am going to share is a series of videos by The Coding Train that helped me understand it a little better, while keeping it fun.</p>
+                <p>There are several sources of good information on Git and GitHub, but the best way to learn is by doing. When I started trying to learn about version control it was hard for me to wrap my head around it. So the first source I am going to share is a series of YouTube videos by The Coding Train that helped me understand it a little better, while keeping it fun.</p>
                 <a class='text-link' href="https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV" target="_blank">Git and GitHub for Poets</a>
             
                 <p>GitHub is also a source of good information, including this:</p> 
@@ -180,12 +196,14 @@
                     Shows a log of commits for the current repo:
                 </p>
                 <p class='code-box'>git log</p>
+
+                <p>To exit the git log you can type either "q" or "z"</p> 
                 
                 <p>Definitions taken from GitHub:
                     <li>git: an open source, distributed version-control system.</li>
                     <li>GitHub: a platform for hosting and collaborating on Git repositories.</li>
                 </p>
-                <p>In order to learn what I have I just did it several times. I made web pages, and then initiated git, then I pushed them remote. I went through the steps several times until it became pretty easy. After that I moved to branches. I do not think they are usually necessary for what I am doing at this time, but I wanted to get comfortable with the basics. That way it will be easier to learn more as my skills improve.</p>
+                <p>In order to learn what I have I just did it several times. I made a new project folder, and then initiated git, then I made my online repo and connected it to my local one. I tried to make regular commits and push them to my online repo, though I was inconsistent as a beginner. I went through the steps several times until it became pretty easy. After that I moved to branches, followed by GitHub pages. I did not need to do all of these things at the time, it was just practicing to get the muscle memory going. </p>
                 <p>I hope this is useful for you. Don't give up, you'll get it!</p>
                 <a href="#top"><p  class="symbol">&uarr;</p></a>
             </section>
