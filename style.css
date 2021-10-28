@@ -29,11 +29,13 @@ h6 {
   font-family: "Zen Antique Soft", serif;
   margin: 0.5rem 0.5rem 0;
   text-align: center;
+  padding: 1rem;
+  color: gray;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
-  margin: 0.5rem 1rem;
+  margin: 1.5rem 1rem;
 }
 
 header {
@@ -80,6 +82,7 @@ p {
 
 p.code-box {
   font-family: "Fira Mono", monospace;
+  color: lightgrey;
 }
 
 ol {
@@ -96,13 +99,11 @@ code {
   margin: 1.5rem 1rem;
   padding: 0.5rem 1rem;
   background-color: lightgray;
-  color: red;
 }
 
 .code-box {
   padding: 1.5rem 1rem;
-  margin: 0 2rem;
-  background-color: lightgray;
+  background-color: #3a3b3d;
   font-family: monospace;
   border-radius: 0.25rem;
 }
@@ -125,7 +126,7 @@ code {
   padding-top: 1rem;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 640px) {
   .nav-link {
     border: none;
     padding: 0.5rem;

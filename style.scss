@@ -29,12 +29,13 @@ h6 {
   font-family: $font-heading;
   margin: 0.5rem 0.5rem 0;
   text-align: center;
-  // color: gray;
+  padding: 1rem;
+  color: gray;
 }
 
 p {
   font-family: $font-text;
-  margin: 0.5rem 1rem;
+  margin: 1.5rem 1rem;
   // font-size: large;
 }
 
@@ -76,6 +77,7 @@ p {
 
 p.code-box {
   font-family: $font-links;
+  color: lightgrey;
 }
 
 ol {
@@ -92,13 +94,12 @@ code {
   margin: 1.5rem 1rem;
   padding: 0.5rem 1rem;
   background-color: lightgray;
-  color: red;
 }
 
 .code-box {
   padding: 1.5rem 1rem;
-  margin: 0 2rem;
-  background-color: lightgray;
+  // margin: 3rem;
+  background-color: rgb(58, 59, 61);
   font-family: monospace;
   border-radius: 0.25rem;
 }
@@ -125,7 +126,7 @@ code {
   padding-top: 1rem;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 640px) {
   .nav-link {
     border: none;
     padding: 0.5rem;

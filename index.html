@@ -42,7 +42,7 @@
                 <p>Once you have initialized your git repository, then any files or other assets you add to the directory will be added to the list of items to be saved when you commit. You can prevent certain things from being added if you want.</p>
                 <p>To start you need to open your command prompt, powershell, or terminal. Once you have opened your prompt, navigate to the directory (folder) you want to track using git. Next type in the following command and hit enter:</p>
                 
-                <p class='code-box'>git init</p class='code-box'>
+                <p class='code-box'>git init</p>
         
 
                 <p>Now your directory is being tracked by git, and this repository that you just created will record all of the changes you make to your code.</p>
@@ -62,10 +62,10 @@
                 <p>Here is how to do it, return to your command prompt and type in the following:</p>
         
 
-                <p class='code-box'>git status</p class='code-box'>
+                <p class='code-box'>git status</p>
 
                 <p>This will get you a list of files and other assets from your directory that need to be staged in red, and those already staged in green.</p>
-                <p class='code-box'>git add filename</p class='code-box'>
+                <p class='code-box'>git add filename</p>
             
                 <p>'filename' means the name of your file, for example index.html. </p>
             
@@ -74,7 +74,7 @@
                 <P>If you have changes across several files within your directory you can simply type in:</P>
             
                 
-                <p class='code-box'>git add .</p class='code-box'>
+                <p class='code-box'>git add .</p>
             
                 <p>This will add all of the files in the current directory that have changes to the staging area. Now that the files are staged, they are ready to commit.You can check you git status agin and you will see everything that is staged is now colored green, which means it is ready to commit.</p>
                 <a href="#top"><p  class="symbol">back to top</p></a>
@@ -86,10 +86,10 @@
                 <h3>Saving your changes, which is called committing in Git.</h3>
                 <p>Now your files are staged and ready to save. To do this you use the 'git commit' command. When you use 'git commit' you are also required to add a message about the changes. You do this by appending the message tag(-m) followed by the message to your commit command:</p> 
             
-                <p class='code-box'> -m "message about changes"</p class='code-box'>
+                <p class='code-box'> -m "message about changes"</p>
 
                 <p>The full command is written below:</p>
-                <p class='code-box'>git commit filename -m "message about changes"</p class='code-box'>
+                <p class='code-box'>git commit filename -m "message about changes"</p>
         
                 <p>Your message is about the changes you have made to your code since the last commit. Normally once your files are made, you do an initial commit and the message is just "initial commit" This is before you add any code, or maybe once you add the very basic bits.</p>
                 <p>Normally the advice is too commit often. It makes it easier to find code that is causing problems, or go back before unwanted changes were made. Each commit is a record of every change you made to every file included in that commit. Just something to keep in mind.</p>
@@ -114,7 +114,7 @@
 
                 <p>Now that you have created your remote repository, open your command line, navigate to your projects directory, and type in the following commands:</p>
 
-                <p class='code-box'>git remote add origin url-of-repository</p class='code-box'>
+                <p class='code-box'>git remote add origin url-of-repository</p>
         
                 <p>To find the URL of your repository, simply navigate to that repo's page on GitHub. Then you can copy the address by clicking on the 'clone' button. You can also copy the address from the adress bar on your web browser while on the repo's page.</p>
                 <p>Now your local repository is connected to your remote repository. Next we will push our changes to GitHub.</p>
@@ -127,14 +127,14 @@
                 <h3>How to push your changes to an online repository, namely Github.</h3>
                 <p>Next we are going to push our changes to GitHub, saving them in our remote repository that we just created. The first time you push a commit you will type in this command:</p>
         
-                <p class='code-box'>git push origin master</p class='code-box'>
+                <p class='code-box'>git push origin master</p>
 
                 <p>The above is for the first time push on any new repository. Once you have pushed commits to your remote repo for the first time the rest of your pushes are done using:</p>
-                <p class='code-box'>git push</p class='code-box'>
+                <p class='code-box'>git push</p>
                 <p>Now your files, and all of the changes made are saved to Github where you can work on them, share them and allow collaboration, just to name a few things. Once you have this set up, it is very quick and simple to keep everything up to date and in synch. To Summarize:</p>
-                <p class='code-box'>git add filename</p class='code-box'><br>
-                <p class='code-box'>git commit filename -m "message about changes"</p class='code-box'><br>
-                <p class='code-box'>git push</p class='code-box'>
+                <p class='code-box'>git add filename</p><br>
+                <p class='code-box'>git commit filename -m "message about changes"</p><br>
+                <p class='code-box'>git push</p>
                 <p>That's all for basic use of Git and GitHub, there is a lot more you can do with these amazing tools. Don't be intimidated, you will get the hang of it. The following sections are just extra tidbits I am still learning, you might find them useful.</p>
                 <a href="#top"><p  class="symbol">back to top</p></a>
             </section>
@@ -144,21 +144,21 @@
                 <p>Branches allow you to work on, or add special features, without interfering with your current project. When you start a repository in Git, it is automatically assigned to the role of 'Master' branch. </p>
                 <p>I often make another branch to work on the layout while I am building my site. I call it layout. Once I am pleased with my work I merge it with the 'Master' branch.</p>
                 <p>To start in your terminal type in:</p>
-                <p class='code-box'>git branch</p class='code-box'>
+                <p class='code-box'>git branch</p>
                 <p>This will give you a list of current branches in your project. The branch you are currently working on will be highlighted. To make a new branch:</p>
-                <p class='code-box'>git branch name-of-new-branch</p class='code-box'>
+                <p class='code-box'>git branch name-of-new-branch</p>
                 <p>Then to switch over to your new branch type in:</p>
-                <p class='code-box'>git checkout name-of-new-branch</p class='code-box'>
+                <p class='code-box'>git checkout name-of-new-branch</p>
                 <p>Now you are working on your new branch. Once you have made some changes you go through the same process of:</p>
                 <p class='code-box'>git add filename</p>
                 <p class='code-box'>git commit filename -m "message about changes"</p>
                 <p class='code-box'>git push</p>
                 <p>If it is your first time pushing this branch to your remote repository then use:</p>
-                <p class='code-box'>git push origin name-of-new-branch</p class='code-box'>
+                <p class='code-box'>git push origin name-of-new-branch</p>
                 <p>Once you are finished pushing your changes to GitHub, then you can switch back to Master by typing in:</p>
-                <p class='code-box'>git checkout master</p class='code-box'>
+                <p class='code-box'>git checkout master</p>
                 <p>Once you have switched to the master branch, you can then merge your other branch to master by typing in:</p>
-                <p class='code-box'>git merge name-of-new-branch</p class='code-box'>
+                <p class='code-box'>git merge name-of-new-branch</p>
                 <p>Now you have merged your changes from your other branch in with the master.</p>
                 <p>This is just a little bit of basic information, things I have had to look up quite a bit until I got it down pat. There is a lot more to explore with Git and GitHub.</p>
                 <a href="#top"><p  class="symbol">back to top</p></a>
