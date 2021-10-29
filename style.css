@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Open+Sans&family=Zen+Antique+Soft&display=swap");
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +18,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1000px;
-  padding: 0 0.25rm;
-  margin: auto;
+  padding: 2rem;
+  background-color: #37505c;
   font-size: large;
+  color: #ffead0;
 }
 
 h1,
@@ -28,18 +32,15 @@ h5,
 h6 {
   font-family: "Zen Antique Soft", serif;
   margin: 0.5rem 0.5rem 0;
-  text-align: center;
   padding: 1rem;
-  color: darkslateblue;
+  color: #f76f8e;
+  margin: auto;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
-  margin: 1.5rem 1rem;
-}
-
-header {
-  padding: 1rem 0.25rem;
+  margin: 1.5rem auto;
+  width: 90vw;
 }
 
 nav {
@@ -48,23 +49,27 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 0.25rem 1rem;
-  margin: 1rem;
+  padding: 2rem 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 2px solid #96616b;
+  margin-bottom: 2rem;
 }
 
 .nav-link {
   padding: 0.35rem;
-  border: 2px solid black;
   margin: 0.15rem;
+  border-left: 2px solid #f76f8e;
+  border-right: 2px solid #f76f8e;
+  background-color: #96616b;
 }
 
 a {
+  color: #ffead0;
   text-decoration: none;
   font-family: "Fira Mono", monospace;
   font-weight: 1000;
@@ -72,17 +77,22 @@ a {
 
 a:hover {
   font-weight: bold;
-  color: green;
-  background-color: lightgray;
+  color: #f76f8e;
 }
 
 p {
-  padding: 0.5rem;
+  padding: 0 1.5rem;
 }
 
 p.code-box {
   font-family: "Fira Mono", monospace;
-  color: lightgrey;
+  color: #f76f8e;
+  border: 2px solid #96616b;
+  border-radius: 0.5rem;
+  padding: 2.5rem 0.5rem;
+  width: 75vw;
+  margin: 2.5rem auto;
+  background-color: #113537;
 }
 
 ol {
@@ -96,20 +106,11 @@ li {
 }
 
 code {
-  margin: 1.5rem 1rem;
-  padding: 0.5rem 1rem;
   background-color: lightgray;
 }
 
 .code-box {
-  padding: 1.5rem 1rem;
-  background-color: #3a3b3d;
   font-family: monospace;
-  border-radius: 0.25rem;
-}
-
-.text-link {
-  margin: 2.5rem;
 }
 
 .symbol {
@@ -120,29 +121,15 @@ code {
   text-align: right;
 }
 
-.main-section {
-  margin: 2rem 0;
-  border-top: 7px solid lightgrey;
-  padding-top: 1rem;
-}
-
 @media only screen and (max-width: 640px) {
   .nav-link {
     border: none;
-    padding: 0.5rem;
-    width: 75vw;
-    background-color: lightgray;
   }
 }
 
 @media only screen and (min-width: 720px) {
   html {
     background-color: lightgray;
-  }
-  body {
-    border-left: 2rem solid grey;
-    border-right: 2rem solid grey;
-    background-color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
